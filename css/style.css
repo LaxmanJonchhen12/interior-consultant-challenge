@@ -1,0 +1,162 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color:#fff;
+}
+body{
+    background: #181719;
+    color:#fff;
+}
+
+#container{
+    height: 100vh;
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:15vh;
+}
+
+#navbar #brand{
+    margin: 2rem 0 0 3rem;
+    text-transform: uppercase;
+    border: 1px solid white;
+    padding: 0.4rem;
+    font-family: 'Crimson Pro', serif;
+    font-weight: 200;
+    font-size: 0.875rem;
+}
+
+#navbar #list{
+    margin: 2rem 2.5rem 0 0;
+}
+
+
+#navbar #list .link{
+    padding: 0 0 0 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1.125rem;
+}
+
+#list nav {
+    display: inline-block;
+}
+
+#content{
+    /* border:2px solid blue; */
+    height:80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#content #description{
+    margin: 0 0 0 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 40vh;
+}
+
+#content #description #main__title{
+    font-family: 'Lora', serif;
+    font-weight: 500;
+    font-size: 3rem;
+}
+
+#content #info{
+    max-width: 410px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+#content #content__image{
+    margin: 3.5rem 2.5rem 0 0;
+}
+
+#content #content__image #profile{
+    height: 35px;
+    width: 35px;
+    border: 1px solid white;
+    border-radius: 1.2rem;
+    margin-right: 1rem;
+}
+
+#content #content__image #bg{
+    height: 350px;
+    width: 495px;
+}
+
+#content #content__image #creator__info {
+    width:325px;
+    height: 155px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0.5rem 1rem;
+    position: relative;
+    top: -78px;
+    left: 139px;
+    background:#181719;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#content #content__image #creator__info #creator__profile{
+    display: flex;
+    align-items: center;
+}
+
+#content #content__image #creator__info #creator__profile #name{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+#content #content__image #creator__info #creator__profile #job{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color:#828282;
+}
+
+#content #content__image #creator__info  #slogan{
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    font-size:1.5rem
+}
+
+#content #read__more{
+    display: flex;
+    align-items: center;
+}
+
+#content #read__more #rm{
+   padding-right: 0.5rem;
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 700;
+   font-size: 1.125rem;
+}
+
+#footer{
+    /* border:2px solid grey; */
+    height:5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 0.875rem;
+    padding: 0 0 1.5rem 0;
+}
+
+#footer #footer__profile{
+    text-decoration: underline;
+    cursor: pointer;
+}
