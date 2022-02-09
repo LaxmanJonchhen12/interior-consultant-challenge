@@ -7,7 +7,18 @@
 a{
     text-decoration: none;
     color:#fff;
+    cursor: pointer;
 }
+
+a:hover{
+    border-bottom: 2px solid white;
+}
+
+
+a:active{
+    border-bottom: 2px solid white;
+}
+
 body{
     background: #181719;
     color:#fff;
@@ -15,6 +26,8 @@ body{
 
 #container{
     height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 #navbar{
@@ -40,7 +53,7 @@ body{
 
 
 #navbar #list .link{
-    padding: 0 0 0 2rem;
+    margin: 0 0 0 2rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 1.125rem;
@@ -159,4 +172,66 @@ body{
 #footer #footer__profile{
     text-decoration: underline;
     cursor: pointer;
+}
+
+/* media query for mobile design */
+@media screen and (max-width: 590px) {
+
+    #container #navbar{
+        height:8vh;
+    }
+
+    #container #navbar #brand{
+        margin: 0rem 0 0 1rem;
+    }
+
+    #container #navbar #list{
+        margin:0;
+        display: none;
+    }
+
+    #container #content{
+        flex-direction:column;
+    }
+
+    #container #content #description{
+        margin: 0rem 0rem 0rem -4.5rem;
+        height: 25vh;
+    }
+
+    #content #read__more #rm{
+        font-size: 0.875rem;
+    }
+
+    #container #content #description #info{
+        max-width: 250px;
+        font-size: 0.875rem;
+    }
+
+    #container #content #description #main__title{
+        font-size: 2.25rem;
+    }
+
+    #container #content #content__image{
+        margin: 0;
+    }
+
+    #container #content #content__image #bg{
+        width:350px;
+        height: 250px;
+    }
+
+    #content{
+        height: 75vh;
+    }
+
+    #content #content__image #creator__info{
+        left:35px;
+        width:300px;
+        height: 140px;
+    }
+
+    #footer{
+        padding: 5rem 0 0 0;
+    }
 }
