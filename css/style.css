@@ -19,6 +19,10 @@ a:active{
     border-bottom: 2px solid white;
 }
 
+.active{
+    border-bottom: 2px solid white;
+}
+
 body{
     background: #181719;
     color:#fff;
@@ -37,6 +41,17 @@ body{
     height:15vh;
 }
 
+#navbar #menu .bar{
+    height:5px;
+    width:35px;
+    background-color: white;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+    display: none;
+}
+
+
 #navbar #brand{
     margin: 2rem 0 0 3rem;
     text-transform: uppercase;
@@ -51,6 +66,23 @@ body{
     margin: 2rem 2.5rem 0 0;
 }
 
+.toggle-button{
+    position: absolute;
+    top:1rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar{
+    height: 5px;
+    width: 30px;
+    background-color: white;
+    border-radius: 10px;
+}
 
 #navbar #list .link{
     margin: 0 0 0 2rem;
@@ -177,18 +209,43 @@ body{
 /* media query for mobile design */
 @media screen and (max-width: 590px) {
 
-    #container #navbar{
-        height:8vh;
+    .toggle-button{
+        display: flex;
     }
 
-    #container #navbar #brand{
-        margin: 0rem 0 0 1rem;
-    }
-
-    #container #navbar #list{
-        margin:0;
+    #list{
         display: none;
     }
+
+    #navbar{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #navbar #brand{
+        margin: 2rem 0 0 1rem;
+        position: relative;
+        top: -1rem;
+        left: -8rem;
+    }
+
+
+
+    #navbar #list nav{
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        display:flex;
+    }
+
+    #navbar #list nav a{
+        padding:.5rem 1rem;
+    }
+
+    #list .active__link{
+        display: flex;
+    }
+
 
     #container #content{
         flex-direction:column;
@@ -196,7 +253,7 @@ body{
 
     #container #content #description{
         margin: 0rem 0rem 0rem -4.5rem;
-        height: 25vh;
+        height: 27vh;
     }
 
     #content #read__more #rm{
@@ -222,7 +279,7 @@ body{
     }
 
     #content{
-        height: 75vh;
+        height: 77vh;
     }
 
     #content #content__image #creator__info{
@@ -232,6 +289,6 @@ body{
     }
 
     #footer{
-        padding: 5rem 0 0 0;
+        padding: 1rem 0 0 0;
     }
 }
